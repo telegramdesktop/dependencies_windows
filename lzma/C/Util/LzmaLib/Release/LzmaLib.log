@@ -1,0 +1,10 @@
+﻿  Alloc.c
+  LzFind.c
+  LzFindMt.c
+  LzmaDec.c
+  LzmaEnc.c
+  LzmaLib.c
+  Threads.c
+  LzmaLibExports.c
+  Code wird generiert...
+  LzmaLib.vcxproj -> C:\TBuild\Libraries\lzma\C\Util\LzmaLib\.\Release\LzmaLib.lib
