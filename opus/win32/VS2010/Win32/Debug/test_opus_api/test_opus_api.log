@@ -1,0 +1,4 @@
+﻿  test_opus_api.c
+     Bibliothek "Win32\Debug\test_opus_api.lib" und Objekt "Win32\Debug\test_opus_api.exp" werden erstellt.
+  test_opus_api.vcxproj -> C:\TBuild\Libraries\opus\win32\VS2010\Win32\Debug\test_opus_api.exe
+  test_opus_api.vcxproj -> Win32\Debug\test_opus_api.pdb (Full PDB)

@@ -1,0 +1,22 @@
+﻿  fatal: No names found, cannot describe anything.
+  Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird.
+  C:\TBuild\Libraries\opus\win32\version.h_temp konnte nicht gefunden werden
+  bands.c
+  celt.c
+  celt_decoder.c
+  celt_encoder.c
+  celt_lpc.c
+  cwrs.c
+  entcode.c
+  entdec.c
+  entenc.c
+  kiss_fft.c
+  laplace.c
+  mathops.c
+  mdct.c
+  modes.c
+  pitch.c
+  quant_bands.c
+  rate.c
+  vq.c
+  celt.vcxproj -> C:\TBuild\Libraries\opus\win32\VS2010\Win32\Release\celt.lib

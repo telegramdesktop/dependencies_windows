@@ -1,0 +1,19 @@
+﻿  fatal: No names found, cannot describe anything.
+  C:\TBuild\Libraries\opus\win32\version.h_temp konnte nicht gefunden werden
+  repacketizer.c
+  opus_multistream_encoder.c
+  opus_multistream_decoder.c
+  opus_multistream.c
+  opus_encoder.c
+  opus_decoder.c
+  opus_compare.c
+..\..\src\opus_compare.c(78): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+..\..\src\opus_compare.c(233): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+..\..\src\opus_compare.c(349): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+..\..\src\opus_compare.c(367): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+  opus.c
+  mlp_data.c
+  mlp.c
+  analysis.c
+  Code wird generiert...
+  opus.vcxproj -> C:\TBuild\Libraries\opus\win32\VS2010\Win32\Debug\opus.lib

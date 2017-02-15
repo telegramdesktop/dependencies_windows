@@ -1,0 +1,89 @@
+﻿  fatal: No names found, cannot describe anything.
+  Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird.
+  Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird.
+  Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird.
+  C:\TBuild\Libraries\opus\win32\version.h_temp konnte nicht gefunden werden
+  VQ_WMat_EC.c
+  VAD.c
+  table_LSF_cos.c
+  tables_pulses_per_block.c
+  tables_pitch_lag.c
+  tables_other.c
+  tables_NLSF_CB_WB.c
+  tables_NLSF_CB_NB_MB.c
+  tables_LTP.c
+  tables_gain.c
+  sum_sqr_shift.c
+  stereo_quant_pred.c
+  stereo_MS_to_LR.c
+  stereo_LR_to_MS.c
+  stereo_find_predictor.c
+  stereo_encode_pred.c
+  stereo_decode_pred.c
+  sort.c
+  sigm_Q15.c
+  shell_coder.c
+  Code wird generiert...
+  Kompilieren...
+  resampler_rom.c
+  resampler_private_up2_HQ.c
+  resampler_private_IIR_FIR.c
+  resampler_private_down_FIR.c
+  resampler_private_AR2.c
+  resampler_down2_3.c
+  resampler_down2.c
+  resampler.c
+  quant_LTP_gains.c
+  process_NLSFs.c
+  PLC.c
+  pitch_est_tables.c
+  NSQ_del_dec.c
+  NSQ.c
+  NLSF_VQ_weights_laroia.c
+  NLSF_VQ.c
+  NLSF_unpack.c
+  NLSF_stabilize.c
+  NLSF_encode.c
+  NLSF_del_dec_quant.c
+  Code wird generiert...
+  Kompilieren...
+  NLSF_decode.c
+  NLSF2A.c
+  LP_variable_cutoff.c
+  LPC_inv_pred_gain.c
+  LPC_analysis_filter.c
+  log2lin.c
+  lin2log.c
+  interpolate.c
+  inner_prod_aligned.c
+  init_encoder.c
+  init_decoder.c
+  HP_variable_cutoff.c
+  gain_quant.c
+  enc_API.c
+  encode_pulses.c
+  encode_indices.c
+  dec_API.c
+  decode_pulses.c
+  decode_pitch.c
+  decode_parameters.c
+  Code wird generiert...
+  Kompilieren...
+  decode_indices.c
+  decode_frame.c
+  decode_core.c
+  decoder_set_fs.c
+  debug.c
+  control_SNR.c
+  control_codec.c
+  control_audio_bandwidth.c
+  code_signs.c
+  CNG.c
+  check_control_input.c
+  bwexpander_32.c
+  bwexpander.c
+  biquad_alt.c
+  ana_filt_bank_1.c
+  A2NLSF.c
+  Code wird generiert...
+  silk_common.vcxproj -> C:\TBuild\Libraries\opus\win32\VS2010\Win32\Debug\silk_common.lib

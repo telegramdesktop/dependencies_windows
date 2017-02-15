@@ -1,0 +1,7 @@
+﻿  test_opus_api.c
+     Bibliothek "Win32\Release\test_opus_api.lib" und Objekt "Win32\Release\test_opus_api.exp" werden erstellt.
+  Code wird generiert.
+  All 536 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Codegenerierung ist abgeschlossen.
+  test_opus_api.vcxproj -> C:\TBuild\Libraries\opus\win32\VS2010\Win32\Release\test_opus_api.exe
+  test_opus_api.vcxproj -> Win32\Release\test_opus_api.pdb (Full PDB)

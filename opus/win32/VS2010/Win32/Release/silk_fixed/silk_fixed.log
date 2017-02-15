@@ -1,0 +1,36 @@
+﻿  apply_sine_window_FIX.c
+  autocorr_FIX.c
+..\..\silk\fixed\autocorr_FIX.c(47): warning C4133: "Funktion": Inkompatible Typen - von "const opus_int16 *" zu "const opus_val16 *"
+..\..\silk\fixed\autocorr_FIX.c(47): warning C4133: "Funktion": Inkompatible Typen - von "opus_int32 *" zu "opus_val32 *"
+  burg_modified_FIX.c
+..\..\silk\fixed\burg_modified_FIX.c(98): warning C4133: "Funktion": Inkompatible Typen - von "const opus_int16 *" zu "const opus_val16 *"
+..\..\silk\fixed\burg_modified_FIX.c(98): warning C4133: "Funktion": Inkompatible Typen - von "opus_int32 [16]" zu "opus_val32 *"
+..\..\silk\fixed\burg_modified_FIX.c(101): warning C4244: "=": Konvertierung von "opus_val32" in "opus_int32", möglicher Datenverlust
+  corrMatrix_FIX.c
+  encode_frame_FIX.c
+  find_LPC_FIX.c
+  find_LTP_FIX.c
+  find_pitch_lags_FIX.c
+  find_pred_coefs_FIX.c
+  k2a_FIX.c
+  k2a_Q16_FIX.c
+  LTP_analysis_filter_FIX.c
+  LTP_scale_ctrl_FIX.c
+  noise_shape_analysis_FIX.c
+  pitch_analysis_core_FIX.c
+..\..\silk\fixed\pitch_analysis_core_FIX.c(194): warning C4133: "Funktion": Inkompatible Typen - von "const opus_int16 *" zu "const opus_val16 *"
+..\..\silk\fixed\pitch_analysis_core_FIX.c(194): warning C4133: "Funktion": Inkompatible Typen - von "opus_int32 *" zu "opus_val32 *"
+..\..\silk\fixed\pitch_analysis_core_FIX.c(640): warning C4133: "Funktion": Inkompatible Typen - von "const opus_int16 *" zu "const opus_val16 *"
+..\..\silk\fixed\pitch_analysis_core_FIX.c(640): warning C4133: "Funktion": Inkompatible Typen - von "opus_int32 *" zu "opus_val32 *"
+  prefilter_FIX.c
+  process_gains_FIX.c
+  regularize_correlations_FIX.c
+  residual_energy16_FIX.c
+  residual_energy_FIX.c
+  Kompilieren...
+  schur64_FIX.c
+  schur_FIX.c
+  solve_LS_FIX.c
+  vector_ops_FIX.c
+  warped_autocorrelation_FIX.c
+  silk_fixed.vcxproj -> C:\TBuild\Libraries\opus\win32\VS2010\Win32\Release\silk_fixed.lib
