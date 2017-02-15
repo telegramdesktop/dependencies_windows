@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
+ReleaseWithoutAsm|Win32|C:\TBuild\Libraries\zlib-1.2.8\contrib\vstudio\vc11\|

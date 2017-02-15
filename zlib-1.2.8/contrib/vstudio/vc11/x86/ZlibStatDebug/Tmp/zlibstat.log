@@ -1,0 +1,20 @@
+﻿  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  gzread.c
+  gzwrite.c
+  infback.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  ioapi.c
+  trees.c
+  uncompr.c
+  unzip.c
+  zip.c
+  zutil.c
+  Code wird generiert...
+  zlibstat.vcxproj -> C:\TBuild\Libraries\zlib-1.2.8\contrib\vstudio\vc11\x86\ZlibStatDebug\zlibstat.lib
