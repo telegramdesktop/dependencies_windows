@@ -34,8 +34,10 @@ GOTO:EOF
 	cd qtbase && git apply ../../../tdesktop/Telegram/Patches/qtbase_%QT_VERSION_STR%.diff && cd ..
 	call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86
 	call configure -debug-and-release -force-debug-info -opensource -confirm-license -static -I "C:\TBuild\Libraries\openssl\Release\include" -L "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib" -l Gdi32 -no-opengl -openssl-linked OPENSSL_LIBS_DEBUG="C:\TBuild\Libraries\openssl_debug\Debug\lib\ssleay32.lib C:\TBuild\Libraries\openssl_debug\Debug\lib\libeay32.lib" OPENSSL_LIBS_RELEASE="C:\TBuild\Libraries\openssl\Release\lib\ssleay32.lib C:\TBuild\Libraries\openssl\Release\lib\libeay32.lib" -mp -nomake examples -nomake tests -platform win32-msvc2015
-
-	call:logInfo "Copying header file to our compiled qt"
+	nmake
+	nmake install
+	
+	call:logInfo "Copying header files to our compiled qt"
 	xcopy *.h ..\qt%QT_VERSION_STR%\ /sy
 
 	cd ..
