@@ -21,7 +21,7 @@ GOTO:EOF
 
 :getQtSource
     call:logInfo "Downloading qt source"
-	
+
 	git clone git://code.qt.io/qt/qt%QT_VERSION_MAJOR%.git tmp
 	cd tmp	
     git checkout %QT_VERSION_MINOR%
@@ -29,14 +29,14 @@ GOTO:EOF
     git checkout v%QT_VERSION_PATCH%
     cd qtbase && git checkout v%QT_VERSION_PATCH% && cd ..
     cd qtimageformats && git checkout v%QT_VERSION_PATCH% && cd ..
-	
-	call:logInfo "Applying the patch"
-	
+
+	call:logInfo "Applying the patch and configure"
 	cd qtbase && git apply ../../../tdesktop/Telegram/Patches/qtbase_%QT_VERSION_STR%.diff && cd ..
-	
+	call configure -debug-and-release -force-debug-info -opensource -confirm-license -static -I "C:\TBuild\Libraries\openssl\Release\include" -L "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib" -l Gdi32 -no-opengl -openssl-linked OPENSSL_LIBS_DEBUG="C:\TBuild\Libraries\openssl_debug\Debug\lib\ssleay32.lib C:\TBuild\Libraries\openssl_debug\Debug\lib\libeay32.lib" OPENSSL_LIBS_RELEASE="C:\TBuild\Libraries\openssl\Release\lib\ssleay32.lib C:\TBuild\Libraries\openssl\Release\lib\libeay32.lib" -mp -nomake examples -nomake tests -platform win32-msvc2015
+
 	call:logInfo "Copying header file to our compiled qt"
 	xcopy *.h ..\qt%QT_VERSION_STR%\ /sy
-	
+
 	cd ..
 	rmdir tmp /s /q
 GOTO:EOF
