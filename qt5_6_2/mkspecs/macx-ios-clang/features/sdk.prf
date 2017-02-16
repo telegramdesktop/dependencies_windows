@@ -1,0 +1,30 @@
+# In case the user sets the SDK manually
+contains(QMAKE_MAC_SDK, ^iphonesimulator.*) {
+    contains(QT_CONFIG, simulator_and_device): \
+        error("iOS simulator is handled automatically for iphonesimulator_and_iphoneos")
+
+    CONFIG += iphonesimulator
+}
+
+build_pass:iphonesimulator: \
+    QMAKE_MAC_SDK ~= s,^iphoneos,iphonesimulator,
+
+load(sdk)
+
+macx-xcode {
+    sdk_path_iphoneos.name = "QMAKE_MAC_SDK_PATH[sdk=iphoneos*]"
+    sdk_path_iphoneos.value = $$QMAKE_MAC_SDK_PATH
+    QMAKE_MAC_SDK_PATH ~= s,iPhoneOS,iPhoneSimulator,
+    sdk_path_iphonesimulator.name = "QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]"
+    sdk_path_iphonesimulator.value = $$QMAKE_MAC_SDK_PATH
+    QMAKE_MAC_XCODE_SETTINGS += sdk_path_iphoneos sdk_path_iphonesimulator
+    QMAKE_MAC_SDK_PATH = "$(QMAKE_MAC_SDK_PATH)"
+
+    sdk_platform_path_iphoneos.name = "QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]"
+    sdk_platform_path_iphoneos.value = $$QMAKE_MAC_SDK_PLATFORM_PATH
+    QMAKE_MAC_SDK_PLATFORM_PATH ~= s,iPhoneOS,iPhoneSimulator,
+    sdk_platform_path_iphonesimulator.name = "QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]"
+    sdk_platform_path_iphonesimulator.value = $$QMAKE_MAC_SDK_PLATFORM_PATH
+    QMAKE_MAC_XCODE_SETTINGS += sdk_platform_path_iphoneos sdk_platform_path_iphonesimulator
+    QMAKE_MAC_SDK_PLATFORM_PATH = "$(QMAKE_MAC_SDK_PLATFORM_PATH)"
+}
