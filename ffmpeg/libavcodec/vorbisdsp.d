@@ -1,2 +1,33 @@
-libavcodec/x86/vorbisdsp.o: libavcodec/x86/vorbisdsp.asm config.asm \
-   libavutil\x86\x86util.asm libavutil\x86\x86inc.asm
+libavcodec/vorbisdsp.o: D:/TBuild/Libraries/ffmpeg/config.h
+libavcodec/vorbisdsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/attributes.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavcodec/vorbisdsp.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavcodec/vorbis.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavcodec/avcodec.h
+libavcodec/vorbisdsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/samplefmt.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/avutil.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/common.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/macros.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/version.h
+libavcodec/vorbisdsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/avconfig.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/intmath.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/intmath.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/common.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/mem.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/error.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/avutil.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/internal.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/timer.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/log.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/timer.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/cpu.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/dict.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/pixfmt.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/emms.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/libm.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/intfloat.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/mathematics.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavutil/rational.h
+libavcodec/vorbisdsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/buffer.h
+libavcodec/vorbisdsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/channel_layout.h
+libavcodec/vorbisdsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/frame.h
+libavcodec/vorbisdsp.o: d:/tbuild/libraries/ffmpeg/libavcodec/version.h
