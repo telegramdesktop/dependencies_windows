@@ -1,7 +1,0 @@
-﻿  test_opus_encode.c
-     Bibliothek "Win32\Release\test_opus_encode.lib" und Objekt "Win32\Release\test_opus_encode.exp" werden erstellt.
-  Code wird generiert.
-  All 559 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Codegenerierung ist abgeschlossen.
-  test_opus_encode.vcxproj -> C:\TBuild\Libraries\opus\win32\VS2010\Win32\Release\test_opus_encode.exe
-  test_opus_encode.vcxproj -> Win32\Release\test_opus_encode.pdb (Full PDB)
