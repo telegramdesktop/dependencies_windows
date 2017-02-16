@@ -1,2 +1,33 @@
-libavcodec/x86/xvididct.o: libavcodec/x86/xvididct.asm config.asm \
-   libavutil\x86\x86util.asm libavutil\x86\x86inc.asm
+libavcodec/xvididct.o: D:/TBuild/Libraries/ffmpeg/config.h
+libavcodec/xvididct.o: D:/TBuild/Libraries/ffmpeg/libavutil/attributes.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavcodec/avcodec.h
+libavcodec/xvididct.o: D:/TBuild/Libraries/ffmpeg/libavutil/samplefmt.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/avutil.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/common.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/macros.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/version.h
+libavcodec/xvididct.o: D:/TBuild/Libraries/ffmpeg/libavutil/avconfig.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/intmath.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/intmath.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/common.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/mem.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/error.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/avutil.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/internal.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/timer.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/log.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/timer.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/cpu.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/dict.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/pixfmt.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/emms.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/libm.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/intfloat.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/mathematics.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavutil/rational.h
+libavcodec/xvididct.o: D:/TBuild/Libraries/ffmpeg/libavutil/buffer.h
+libavcodec/xvididct.o: D:/TBuild/Libraries/ffmpeg/libavutil/channel_layout.h
+libavcodec/xvididct.o: D:/TBuild/Libraries/ffmpeg/libavutil/frame.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavcodec/version.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavcodec/idctdsp.h
+libavcodec/xvididct.o: d:/tbuild/libraries/ffmpeg/libavcodec/xvididct.h
