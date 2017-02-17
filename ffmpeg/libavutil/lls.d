@@ -1,2 +1,28 @@
-libavutil/x86/lls.o: libavutil/x86/lls.asm config.asm \
-   libavutil\x86\x86util.asm libavutil\x86\x86inc.asm
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/attributes.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/internal.h
+libavutil/lls.o: D:/TBuild/Libraries/ffmpeg/config.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/timer.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/log.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/avutil.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/common.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/macros.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/version.h
+libavutil/lls.o: D:/TBuild/Libraries/ffmpeg/libavutil/avconfig.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/intmath.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/intmath.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/common.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/mem.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/error.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/avutil.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/internal.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/rational.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/mathematics.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/intfloat.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/log.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/pixfmt.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/timer.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/cpu.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/dict.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/emms.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/libm.h
+libavutil/lls.o: d:/tbuild/libraries/ffmpeg/libavutil/lls.h

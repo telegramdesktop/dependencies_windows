@@ -1,2 +1,32 @@
-libavcodec/x86/lossless_audiodsp.o: libavcodec/x86/lossless_audiodsp.asm \
-   config.asm libavutil\x86\x86util.asm libavutil\x86\x86inc.asm
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavcodec/avcodec.h
+libavcodec/lossless_audiodsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/samplefmt.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/avutil.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/common.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/attributes.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/macros.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/version.h
+libavcodec/lossless_audiodsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/avconfig.h
+libavcodec/lossless_audiodsp.o: D:/TBuild/Libraries/ffmpeg/config.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/intmath.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/intmath.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/common.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/mem.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/error.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/avutil.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/internal.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/timer.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/log.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/timer.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/cpu.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/dict.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/pixfmt.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/emms.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/libm.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/intfloat.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/mathematics.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavutil/rational.h
+libavcodec/lossless_audiodsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/buffer.h
+libavcodec/lossless_audiodsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/channel_layout.h
+libavcodec/lossless_audiodsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/frame.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavcodec/version.h
+libavcodec/lossless_audiodsp.o: d:/tbuild/libraries/ffmpeg/libavcodec/lossless_audiodsp.h

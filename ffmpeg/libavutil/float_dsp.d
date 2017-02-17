@@ -1,2 +1,27 @@
-libavutil/x86/float_dsp.o: libavutil/x86/float_dsp.asm config.asm \
-   libavutil\x86\x86util.asm libavutil\x86\x86inc.asm
+libavutil/float_dsp.o: D:/TBuild/Libraries/ffmpeg/config.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/attributes.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/float_dsp.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/mem.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/error.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/avutil.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/common.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/macros.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/version.h
+libavutil/float_dsp.o: D:/TBuild/Libraries/ffmpeg/libavutil/avconfig.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/intmath.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/intmath.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/common.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/mem.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/internal.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/timer.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/log.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/avutil.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/timer.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/cpu.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/dict.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/pixfmt.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/x86/emms.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/libm.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/intfloat.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/mathematics.h
+libavutil/float_dsp.o: d:/tbuild/libraries/ffmpeg/libavutil/rational.h
