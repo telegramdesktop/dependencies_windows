@@ -28,6 +28,7 @@ GOTO:EOF
 	PowerShell Remove-Item .\*\* -include *.S    -force -recurse
 	PowerShell Remove-Item .\*\* -include *.v    -force -recurse
 	PowerShell Remove-Item .\*\* -include *.java -force -recurse
+	PowerShell Remove-Item .\*\* -include *.pl   -force -recurse
 GOTO:EOF
 
 :deleteProjectFiles
