@@ -1,0 +1,17 @@
+[glWidgetRendering]
+windows
+[glFBORendering]
+windows
+[multipleFBOInterleavedRendering]
+windows
+[glPBufferRendering]
+windows
+[replaceClipping]
+windows
+[clipTest]
+windows
+opensuse-13.1
+[graphicsViewClipping]
+windows
+[glFBOUseInGLWidget]
+windows

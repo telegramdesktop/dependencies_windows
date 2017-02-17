@@ -100,6 +100,42 @@ Makefile: qtimageformats.pro .qmake.conf .qmake.cache C:\TBuild\Libraries\qt5_6_
 		C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\common\msvc-base.conf \
 		C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\common\msvc-desktop.conf \
 		C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\qconfig.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_bootstrap_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_concurrent.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_concurrent_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_core.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_core_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_dbus.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_dbus_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_gui.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_gui_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_network.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_network_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_platformsupport_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_printsupport.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_printsupport_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_sql.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_sql_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_testlib.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_testlib_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_widgets.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_widgets_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_xml.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_xml_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_zlib_private.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qgenericbearer.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qico.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qminimal.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qnativewifibearer.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qoffscreen.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qtuiotouchplugin.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qwindows.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_windowsprintersupport.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_tool_qdbuscpp2xml.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_tool_qdbusxml2cpp.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_tool_qlalr.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_tool_syncqt.pri \
+		c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_tool_uic.pri \
 		C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_bootstrap_private.pri \
 		C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_concurrent.pri \
 		C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_concurrent_private.pri \
@@ -173,6 +209,42 @@ C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\common\angle.conf:
 C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\common\msvc-base.conf:
 C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\common\msvc-desktop.conf:
 C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\qconfig.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_bootstrap_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_concurrent.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_concurrent_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_core.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_core_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_dbus.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_dbus_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_gui.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_gui_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_network.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_network_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_platformsupport_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_printsupport.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_printsupport_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_sql.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_sql_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_testlib.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_testlib_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_widgets.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_widgets_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_xml.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_xml_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_zlib_private.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qgenericbearer.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qico.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qminimal.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qnativewifibearer.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qoffscreen.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qtuiotouchplugin.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_qwindows.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_plugin_windowsprintersupport.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_tool_qdbuscpp2xml.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_tool_qdbusxml2cpp.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_tool_qlalr.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_tool_syncqt.pri:
+c:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_tool_uic.pri:
 C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_bootstrap_private.pri:
 C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_concurrent.pri:
 C:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\modules\qt_lib_concurrent_private.pri:

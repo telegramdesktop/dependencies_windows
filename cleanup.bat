@@ -76,6 +76,11 @@ GOTO:EOF
 	PowerShell Remove-Item .\*\* -include *.jpg  -force -recurse
 	PowerShell Remove-Item .\*\* -include *.jpeg -force -recurse
 	PowerShell Remove-Item .\*\* -include *.png  -force -recurse
+	PowerShell Remove-Item .\*\* -include *.bmp  -force -recurse
+	PowerShell Remove-Item .\*\* -include *.gif  -force -recurse
+	PowerShell Remove-Item .\*\* -include *.tif  -force -recurse
+	PowerShell Remove-Item .\*\* -include *.tiff -force -recurse
+	PowerShell Remove-Item .\*\* -include *.svg  -force -recurse
 GOTO:EOF
 
 :deleteDocumentation
@@ -93,6 +98,7 @@ GOTO:EOF
 	PowerShell Remove-Item .\*\* -include *.css       -force -recurse
 	PowerShell Remove-Item .\*\* -include *.htm       -force -recurse
 	PowerShell Remove-Item .\*\* -include *.html      -force -recurse
+	PowerShell Remove-Item .\*\* -include *.ttf       -force -recurse
 	PowerShell Remove-Item .\*\* -include *.xml       -force -recurse
 	PowerShell Remove-Item .\*\* -include *.xsl       -force -recurse
 	PowerShell Remove-Item .\*\* -include *.mo        -force -recurse
@@ -102,5 +108,13 @@ GOTO:EOF
 	PowerShell Remove-Item .\*\* -include *.tmp       -force -recurse
 
 	:: Remove git folders
+	IF EXIST .git (
+	    rename .git .KEEP_ME
+	)
+
 	PowerShell "Get-ChildItem -path . -Include '.git' -Recurse -force | Remove-Item -force -Recurse"
+
+	IF EXIST .KEEP_ME (
+	    rename .KEEP_ME .git
+	)
 GOTO:EOF

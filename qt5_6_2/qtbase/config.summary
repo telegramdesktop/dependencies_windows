@@ -1,0 +1,181 @@
+Environment:
+    INCLUDE=
+      C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE
+      C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE
+      C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt
+      C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um
+      C:\Program Files (x86)\Windows Kits\8.1\include\\shared
+      C:\Program Files (x86)\Windows Kits\8.1\include\\um
+      C:\Program Files (x86)\Windows Kits\8.1\include\\winrt
+      
+    LIB=
+      C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\LIB
+      C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\LIB
+      C:\Program Files (x86)\Windows Kits\10\lib\10.0.10240.0\ucrt\x86
+      C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x86
+      C:\Program Files (x86)\Windows Kits\8.1\lib\winv6.3\um\x86
+      
+    PATH=
+      C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow
+      C:\Program Files (x86)\MSBuild\14.0\bin
+      C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\
+      C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN
+      C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools
+      C:\Windows\Microsoft.NET\Framework\v4.0.30319
+      C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\VCPackages
+      C:\Program Files (x86)\HTML Help Workshop
+      C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Performance Tools
+      C:\Program Files (x86)\Windows Kits\8.1\bin\x86
+      C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\
+      C:\Python27\
+      C:\Python27\Scripts
+      C:\Python33\
+      C:\Perl64\site\bin
+      C:\Perl64\bin
+      C:\Windows\system32
+      C:\Windows
+      C:\Windows\System32\Wbem
+      C:\Windows\System32\WindowsPowerShell\v1.0\
+      C:\Users\auerc\.dnx\bin
+      C:\Program Files\Microsoft DNX\Dnvm\
+      C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\
+      C:\Program Files\Microsoft SQL Server\130\Tools\Binn\
+      C:\Program Files\Git\cmd
+      C:\Program Files\CMake\bin
+      C:\Users\auerc\AppData\Local\Microsoft\WindowsApps
+      
+Configuration:
+    precompile_header
+    pcre
+    force_debug_info
+    debug
+    compile_examples
+    msvc_mp
+Qt Configuration:
+    minimal-config
+    small-config
+    medium-config
+    large-config
+    full-config
+    debug_and_release build_all release
+    debug
+    static
+    zlib
+    gif
+    jpeg
+    png
+    freetype
+    harfbuzz
+    build_all
+    accessibility
+    ssl
+    openssl-linked
+    dbus
+    audio-backend
+    directwrite
+    native-gestures
+    qpa
+    concurrent
+
+QMAKESPEC...................win32-msvc2015 (commandline)
+Architecture................i386, features: sse sse2
+Host Architecture...........i386, features: sse sse2
+Maketool....................nmake
+Debug build.................yes (combined)
+Default build...............debug
+Force debug info............yes
+Force optimized tools.......no
+C++ language standard.......auto
+Link Time Code Generation...no
+Using PCH ..................yes
+Accessibility support.......yes
+RTTI support................yes
+SSE2 support................yes
+SSE3 support................yes
+SSSE3 support...............yes
+SSE4.1 support..............yes
+SSE4.2 support..............yes
+AVX support.................yes
+AVX2 support................yes
+NEON support................no
+OpenGL support..............no
+Large File support..........yes
+NIS support.................no
+Iconv support...............no
+Evdev support...............no
+Mtdev support...............no
+Inotify support.............no
+eventfd(7) support..........no
+Glib support................no
+CUPS support................no
+OpenVG support..............no
+SSL support.................yes
+OpenSSL support.............linked
+libproxy support............no
+Qt D-Bus support............runtime
+Qt Widgets module support...yes
+Qt GUI module support.......yes
+QML debugging...............yes
+DirectWrite support.........yes
+Use system proxies..........no
+
+QPA Backends:
+    GDI.....................yes
+    Direct2D................no
+
+Third Party Libraries:
+    ZLIB support............qt
+    GIF support.............yes
+    JPEG support............yes
+    PNG support.............yes
+    FreeType support........yes
+    Fontconfig support......no
+    HarfBuzz support........qt
+    PCRE support............qt
+    ICU support.............no
+    ANGLE...................no
+    Dynamic OpenGL..........no
+
+Styles:
+    Windows.................yes
+    Windows XP..............yes
+    Windows Vista...........yes
+    Fusion..................yes
+    Windows CE..............no
+    Windows Mobile..........no
+
+Sql Drivers:
+    ODBC....................no
+    MySQL...................no
+    OCI.....................no
+    PostgreSQL..............no
+    TDS.....................no
+    DB2.....................no
+    SQLite..................yes (qt)
+    SQLite2.................no
+    InterBase...............no
+
+Sources are in..............c:\TBuild\Libraries\qt5_6_2\qtbase
+Build is done in............C:\TBuild\Libraries\qt5_6_2\qtbase
+Install prefix..............C:\TBuild\Libraries\qt5_6_2\qtbase
+Headers installed to........C:\TBuild\Libraries\qt5_6_2\qtbase\include
+Libraries installed to......C:\TBuild\Libraries\qt5_6_2\qtbase\lib
+Arch-dep. data to...........C:\TBuild\Libraries\qt5_6_2\qtbase
+Plugins installed to........C:\TBuild\Libraries\qt5_6_2\qtbase\plugins
+Library execs installed to..C:\TBuild\Libraries\qt5_6_2\qtbase\bin
+QML1 imports installed to...C:\TBuild\Libraries\qt5_6_2\qtbase\imports
+QML2 imports installed to...C:\TBuild\Libraries\qt5_6_2\qtbase\qml
+Binaries installed to.......C:\TBuild\Libraries\qt5_6_2\qtbase\bin
+Arch-indep. data to.........C:\TBuild\Libraries\qt5_6_2\qtbase
+Docs installed to...........C:\TBuild\Libraries\qt5_6_2\qtbase\doc
+Translations installed to...C:\TBuild\Libraries\qt5_6_2\qtbase\translations
+Examples installed to.......C:\TBuild\Libraries\qt5_6_2\qtbase\examples
+Tests installed to..........C:\TBuild\Libraries\qt5_6_2\qtbase\tests
+Include paths...............C:\TBuild\Libraries\openssl\Release\include 
+Additional libraries........-LC:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib -lGdi32 
+WARNING: Using static linking will disable the use of plugins.
+         Make sure you compile ALL needed modules into the library.
+Using OpenSSL libraries:
+   debug  : OPENSSL_LIBS_DEBUG=C:\TBuild\Libraries\openssl_debug\Debug\lib\ssleay32.lib C:\TBuild\Libraries\openssl_debug\Debug\lib\libeay32.lib
+   release: OPENSSL_LIBS_RELEASE=C:\TBuild\Libraries\openssl\Release\lib\ssleay32.lib C:\TBuild\Libraries\openssl\Release\lib\libeay32.lib
+   both   : 

@@ -1,0 +1,2 @@
+QTREPOS += C:/TBuild/Libraries/qt5_6_2/qtbase
+QMAKEMODULES += C:/TBuild/Libraries/qt5_6_2/qtbase/mkspecs/modules
