@@ -29,8 +29,12 @@ GOTO:EOF
 	PowerShell Remove-Item .\*\* -include *.v    -force -recurse
 	PowerShell Remove-Item .\*\* -include *.java -force -recurse
 	PowerShell Remove-Item .\*\* -include *.pl   -force -recurse
-	PowerShell Remove-Item .\*\* -include *.py   -force -recurse
 	PowerShell Remove-Item .\*\* -include *.m    -force -recurse
+
+	PowerShell Remove-Item .\*\* -include *.py  -force -recurse
+	PowerShell Remove-Item .\*\* -include *.pyc -force -recurse
+	PowerShell Remove-Item .\*\* -include *.pyo -force -recurse
+	PowerShell Remove-Item .\*\* -include *.pyd -force -recurse
 GOTO:EOF
 
 :deleteProjectFiles
