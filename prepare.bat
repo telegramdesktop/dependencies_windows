@@ -4,11 +4,11 @@ SET QT_VERSION_MINOR=%QT_VERSION_MAJOR%.6
 SET QT_VERSION_PATCH=%QT_VERSION_MINOR%.2
 SET QT_VERSION_STR=5_6_2
 
-call:logInfo "Unpacking qt %QT_VERSION_STR%"
-7z x -o.\qt%QT_VERSION_STR% .\qt%QT_VERSION_STR%\qtbase.7z
+::call:logInfo "Unpacking qt %QT_VERSION_STR%"
+::7z x -o.\qt%QT_VERSION_STR% .\qt%QT_VERSION_STR%\qtbase.7z
 
-call:logInfo "Removing extracted qt archive"
-del .\qt%QT_VERSION_STR%\qtbase.7z
+::call:logInfo "Removing extracted qt archive"
+::del .\qt%QT_VERSION_STR%\qtbase.7z
 
 call:getQtSource
 
@@ -20,10 +20,11 @@ GOTO:EOF
 GOTO:EOF
 
 :getQtSource
+	rmdir qt%QT_VERSION_STR% /s /q
     call:logInfo "Downloading qt source"
 
-	git clone git://code.qt.io/qt/qt%QT_VERSION_MAJOR%.git tmp
-	cd tmp	
+	git clone git://code.qt.io/qt/qt%QT_VERSION_MAJOR%.git qt%QT_VERSION_STR%
+	cd qt%QT_VERSION_STR%	
     git checkout %QT_VERSION_MINOR%
     perl init-repository --module-subset=qtbase,qtimageformats
     git checkout v%QT_VERSION_PATCH%
@@ -37,9 +38,9 @@ GOTO:EOF
 	nmake
 	nmake install
 	
-	call:logInfo "Copying header files to our compiled qt"
-	xcopy *.h ..\qt%QT_VERSION_STR%\ /sy
+	::call:logInfo "Copying header files to our compiled qt"
+	::xcopy *.h ..\qt%QT_VERSION_STR%\ /sy
 
 	cd ..
-	rmdir tmp /s /q
+	::rmdir tmp /s /q
 GOTO:EOF
