@@ -76,8 +76,8 @@ GOTO:EOF
 :deleteDocumentation
     call:logInfo "Deleting documentation"
 
-	PowerShell Remove-Item .\*\* -include *.md  -force -recurse
-	PowerShell Remove-Item .\*\* -include *.qdoc  -force -recurse
+	PowerShell Remove-Item .\*\* -include *.md   -force -recurse
+	PowerShell Remove-Item .\*\* -include *.qdoc -force -recurse
 	PowerShell Remove-Item .\*\* -include *.txt  -force -recurse
 GOTO:EOF
 
@@ -90,4 +90,5 @@ GOTO:EOF
 	PowerShell Remove-Item .\*\* -include *.mo        -force -recurse
 	PowerShell Remove-Item .\*\* -include *.m4        -force -recurse
 	PowerShell Remove-Item .\*\* -include *.gitignore -force -recurse
+	PowerShell Remove-Item .\*\* -include *.tmp       -force -recurse
 GOTO:EOF
