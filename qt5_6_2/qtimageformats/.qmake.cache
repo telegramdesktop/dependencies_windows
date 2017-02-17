@@ -1,0 +1,4 @@
+CONFIG += done_config_jasper
+CONFIG += done_config_libmng
+CONFIG += done_config_libtiff
+CONFIG += done_config_libwebp

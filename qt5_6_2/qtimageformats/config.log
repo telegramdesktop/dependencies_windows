@@ -1,0 +1,52 @@
+executing config test jasper
++ cd C:\TBuild\Libraries\qt5_6_2\qtimageformats\config.tests\jasper && C:\TBuild\Libraries\qt5_6_2\qtbase\bin\qmake -spec C:/TBuild/Libraries/qt5_6_2/qtbase/mkspecs/win32-msvc2015 "CONFIG -= qt debug_and_release app_bundle lib_bundle" C:/TBuild/Libraries/qt5_6_2/qtimageformats/config.tests/jasper
++ cd C:\TBuild\Libraries\qt5_6_2\qtimageformats\config.tests\jasper && set MAKEFLAGS=& nmake
+
+Microsoft (R) Program Maintenance Utility, Version 14.00.24210.0
+Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+
+	cl -c -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -Zi -MTd -D_HAS_EXCEPTIONS=0 -MP -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 /Fd.obj\jasper.vc.pdb -DUNICODE -DWIN32 -DQT_NO_EXCEPTIONS -I. -IC:\TBuild\Libraries\openssl\Release\include -IC:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\win32-msvc2015 -Fo.obj\ @C:\Users\auerc\AppData\Local\Temp\nm7815.tmp
+jasper.cpp
+.\jasper.cpp(36): fatal error C1083: Datei (Include) kann nicht ge”ffnet werden: "jasper/jasper.h": No such file or directory
+NMAKE : fatal error U1077: ""C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.EXE"": Rückgabe-Code "0x2"
+Stop.
+test jasper FAILED
+executing config test libmng
++ cd C:\TBuild\Libraries\qt5_6_2\qtimageformats\config.tests\libmng && C:\TBuild\Libraries\qt5_6_2\qtbase\bin\qmake -spec C:/TBuild/Libraries/qt5_6_2/qtbase/mkspecs/win32-msvc2015 "CONFIG -= qt debug_and_release app_bundle lib_bundle" C:/TBuild/Libraries/qt5_6_2/qtimageformats/config.tests/libmng
++ cd C:\TBuild\Libraries\qt5_6_2\qtimageformats\config.tests\libmng && set MAKEFLAGS=& nmake
+
+Microsoft (R) Program Maintenance Utility, Version 14.00.24210.0
+Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+
+	cl -c -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -Zi -MTd -D_HAS_EXCEPTIONS=0 -MP -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 /Fd.obj\libmng.vc.pdb -DUNICODE -DWIN32 -DQT_NO_EXCEPTIONS -I. -IC:\TBuild\Libraries\openssl\Release\include -IC:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\win32-msvc2015 -Fo.obj\ @C:\Users\auerc\AppData\Local\Temp\nm795D.tmp
+libmng.cpp
+.\libmng.cpp(35): fatal error C1083: Datei (Include) kann nicht ge”ffnet werden: "libmng.h": No such file or directory
+NMAKE : fatal error U1077: ""C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.EXE"": Rückgabe-Code "0x2"
+Stop.
+test libmng FAILED
+executing config test libtiff
++ cd C:\TBuild\Libraries\qt5_6_2\qtimageformats\config.tests\libtiff && C:\TBuild\Libraries\qt5_6_2\qtbase\bin\qmake -spec C:/TBuild/Libraries/qt5_6_2/qtbase/mkspecs/win32-msvc2015 "CONFIG -= qt debug_and_release app_bundle lib_bundle" C:/TBuild/Libraries/qt5_6_2/qtimageformats/config.tests/libtiff
++ cd C:\TBuild\Libraries\qt5_6_2\qtimageformats\config.tests\libtiff && set MAKEFLAGS=& nmake
+
+Microsoft (R) Program Maintenance Utility, Version 14.00.24210.0
+Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+
+	cl -c -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -Zi -MTd -D_HAS_EXCEPTIONS=0 -MP -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 /Fd.obj\libtiff.vc.pdb -DUNICODE -DWIN32 -DQT_NO_EXCEPTIONS -I. -IC:\TBuild\Libraries\openssl\Release\include -IC:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\win32-msvc2015 -Fo.obj\ @C:\Users\auerc\AppData\Local\Temp\nm7AB5.tmp
+libtiff.cpp
+.\libtiff.cpp(34): fatal error C1083: Datei (Include) kann nicht ge”ffnet werden: "tiffio.h": No such file or directory
+NMAKE : fatal error U1077: ""C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.EXE"": Rückgabe-Code "0x2"
+Stop.
+test libtiff FAILED
+executing config test libwebp
++ cd C:\TBuild\Libraries\qt5_6_2\qtimageformats\config.tests\libwebp && C:\TBuild\Libraries\qt5_6_2\qtbase\bin\qmake -spec C:/TBuild/Libraries/qt5_6_2/qtbase/mkspecs/win32-msvc2015 "CONFIG -= qt debug_and_release app_bundle lib_bundle" C:/TBuild/Libraries/qt5_6_2/qtimageformats/config.tests/libwebp
++ cd C:\TBuild\Libraries\qt5_6_2\qtimageformats\config.tests\libwebp && set MAKEFLAGS=& nmake
+
+Microsoft (R) Program Maintenance Utility, Version 14.00.24210.0
+Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+
+	cl -c -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -Zi -MTd -D_HAS_EXCEPTIONS=0 -MP -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 /Fd.obj\libwebp.vc.pdb -DUNICODE -DWIN32 -DQT_NO_EXCEPTIONS -I. -IC:\TBuild\Libraries\openssl\Release\include -IC:\TBuild\Libraries\qt5_6_2\qtbase\mkspecs\win32-msvc2015 -Fo.obj\ @C:\Users\auerc\AppData\Local\Temp\nm7BFD.tmp
+libwebp.cpp
+.\libwebp.cpp(34): fatal error C1083: Datei (Include) kann nicht ge”ffnet werden: "webp/decode.h": No such file or directory
+NMAKE : fatal error U1077: ""C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.EXE"": Rückgabe-Code "0x2"
+Stop.
+test libwebp FAILED
