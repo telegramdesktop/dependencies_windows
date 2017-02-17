@@ -24,6 +24,7 @@ GOTO:EOF
 	PowerShell Remove-Item .\*\* -include *.cpp  -force -recurse
 	PowerShell Remove-Item .\*\* -include *.c    -force -recurse
 	PowerShell Remove-Item .\*\* -include *.cc   -force -recurse
+	PowerShell Remove-Item .\*\* -include *.cs   -force -recurse
 	PowerShell Remove-Item .\*\* -include *.asm  -force -recurse
 	PowerShell Remove-Item .\*\* -include *.S    -force -recurse
 	PowerShell Remove-Item .\*\* -include *.v    -force -recurse
@@ -94,6 +95,7 @@ GOTO:EOF
 	PowerShell Remove-Item .\*\* -include *.xml       -force -recurse
 	PowerShell Remove-Item .\*\* -include *.xsl       -force -recurse
 	PowerShell Remove-Item .\*\* -include *.mo        -force -recurse
+	PowerShell Remove-Item .\*\* -include *.po        -force -recurse
 	PowerShell Remove-Item .\*\* -include *.m4        -force -recurse
 	PowerShell Remove-Item .\*\* -include *.gitignore -force -recurse
 	PowerShell Remove-Item .\*\* -include *.tmp       -force -recurse
