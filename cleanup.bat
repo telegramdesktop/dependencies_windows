@@ -91,6 +91,7 @@ GOTO:EOF
 
 	PowerShell Remove-Item .\*\* -include *.js        -force -recurse
 	PowerShell Remove-Item .\*\* -include *.css       -force -recurse
+	PowerShell Remove-Item .\*\* -include *.htm       -force -recurse
 	PowerShell Remove-Item .\*\* -include *.html      -force -recurse
 	PowerShell Remove-Item .\*\* -include *.xml       -force -recurse
 	PowerShell Remove-Item .\*\* -include *.xsl       -force -recurse
