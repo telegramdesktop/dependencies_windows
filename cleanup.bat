@@ -99,4 +99,7 @@ GOTO:EOF
 	PowerShell Remove-Item .\*\* -include *.m4        -force -recurse
 	PowerShell Remove-Item .\*\* -include *.gitignore -force -recurse
 	PowerShell Remove-Item .\*\* -include *.tmp       -force -recurse
+
+	:: Remove git folders
+	PowerShell "Get-ChildItem -path . -Include '.git' -Recurse -force | Remove-Item -force -Recurse"
 GOTO:EOF
