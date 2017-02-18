@@ -52,10 +52,12 @@ GOTO:EOF
 :deleteScripts
     call:logInfo "Deleting scripts"
 
-	::keep ninja/ninja.exe
+	::keep ninja/ninja.exe and qt5_6_2\qtbase\bin\moc.exe
 	rename .\ninja\ninja.exe ninja.KEEP_ME
+	rename .\qt5_6_2\qtbase\bin\moc.exe moc.KEEP_ME
 	PowerShell Remove-Item .\*\* -include *.exe -force -recurse
 	rename .\ninja\ninja.KEEP_ME ninja.exe
+	rename .\qt5_6_2\qtbase\bin\moc.KEEP_ME moc.exe
 
 	PowerShell Remove-Item .\*\* -include *.sh  -force -recurse
 	PowerShell Remove-Item .\*\* -include *.ps1 -force -recurse
@@ -109,12 +111,12 @@ GOTO:EOF
 
 	:: Remove git folders
 	IF EXIST .git (
-	    rename .git .KEEP_ME
+	    PowerShell Rename-Item '.git' '.KEEP_ME' -Force
 	)
 
 	PowerShell "Get-ChildItem -path . -Include '.git' -Recurse -force | Remove-Item -force -Recurse"
 
 	IF EXIST .KEEP_ME (
-	    rename .KEEP_ME .git
+	    PowerShell Rename-Item '.KEEP_ME' '.git' -Force
 	)
 GOTO:EOF
