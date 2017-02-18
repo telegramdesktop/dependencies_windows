@@ -52,12 +52,14 @@ GOTO:EOF
 :deleteScripts
     call:logInfo "Deleting scripts"
 
-	::keep ninja/ninja.exe and qt5_6_2\qtbase\bin\moc.exe
+	::keep ninja/ninja.exe, qt5_6_2\qtbase\bin\moc.exe, qt5_6_2\qtbase\bin\rcc.exe
 	rename .\ninja\ninja.exe ninja.KEEP_ME
 	rename .\qt5_6_2\qtbase\bin\moc.exe moc.KEEP_ME
+	rename .\qt5_6_2\qtbase\bin\rcc.exe rcc.KEEP_ME
 	PowerShell Remove-Item .\*\* -include *.exe -force -recurse
 	rename .\ninja\ninja.KEEP_ME ninja.exe
 	rename .\qt5_6_2\qtbase\bin\moc.KEEP_ME moc.exe
+	rename .\qt5_6_2\qtbase\bin\rcc.KEEP_ME rcc.exe
 
 	PowerShell Remove-Item .\*\* -include *.sh  -force -recurse
 	PowerShell Remove-Item .\*\* -include *.ps1 -force -recurse
