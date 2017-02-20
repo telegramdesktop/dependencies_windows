@@ -119,9 +119,6 @@ GOTO:EOF
     PowerShell Remove-Item .\*\* -include *.cache     -force -recurse
     PowerShell Remove-Item .\*\* -include *.test      -force -recurse
     PowerShell Remove-Item .\*\* -include *.conf      -force -recurse
-	
-	:: Remove files without extension
-	PowerShell -command "Get-ChildItem . -file -recurse | where {-not $_.extension} | Remove-Item"
 
     :: Remove git folders
     IF EXIST .git (
