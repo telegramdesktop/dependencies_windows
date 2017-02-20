@@ -116,6 +116,9 @@ GOTO:EOF
     PowerShell Remove-Item .\*\* -include *.m4        -force -recurse
     PowerShell Remove-Item .\*\* -include *.gitignore -force -recurse
     PowerShell Remove-Item .\*\* -include *.tmp       -force -recurse
+    PowerShell Remove-Item .\*\* -include *.cache     -force -recurse
+    PowerShell Remove-Item .\*\* -include *.test      -force -recurse
+    PowerShell Remove-Item .\*\* -include *.conf      -force -recurse
 
     :: Remove git folders
     IF EXIST .git (
