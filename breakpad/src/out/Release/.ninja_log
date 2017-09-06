@@ -1,0 +1,9 @@
+# ninja log v5
+2	733	0	obj/common/windows/common.guid_string.obj	8f23314e1e88050b
+13	1197	0	obj/client/windows/crash_generation/crash_generation_client.crash_generation_client.obj	4f6d536aea31fa19
+4	1344	0	obj/common/windows/common.http_upload.obj	569fa760da1bab1e
+1198	1359	0	obj/client/windows/crash_generation/crash_generation_client.lib	868efa375deb3b9f
+734	1516	0	obj/common/windows/common.string_utils.obj	ade8b9f1acbd952c
+1517	1689	0	obj/client/windows/common.lib	ca1315eb1d25ae4b
+1347	2327	0	obj/client/windows/handler/exception_handler.exception_handler.obj	671f121226318648
+2328	2435	0	obj/client/windows/handler/exception_handler.lib	9531909eeab98b07

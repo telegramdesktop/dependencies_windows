@@ -1,0 +1,134 @@
+cl_x64 = "C:\Program Files (x86)\Microsoft Visual $
+    Studio\2017\Professional\VC\Tools\MSVC\14.11.25503\bin\HostX64\x64\cl.exe"
+cl_x86 = "C:\Program Files (x86)\Microsoft Visual $
+    Studio\2017\Professional\VC\Tools\MSVC\14.11.25503\bin\HostX64\x86\cl.exe"
+cc = UNSET
+cxx = UNSET
+ld = link.exe
+idl = midl.exe
+ar = lib.exe
+rc = rc.exe
+ml_x86 = ml.exe
+ml_x64 = ml64.exe
+mt = mt.exe
+
+pool link_pool
+  depth = 1
+
+rule cc
+  command = ninja -t msvc -e $arch -- $cc /nologo /showIncludes /FC @$out.rsp /c $in /Fo$out /Fd$pdbname_c 
+  description = CC $out
+  rspfile = $out.rsp
+  rspfile_content = $defines $includes $cflags $cflags_c
+  deps = msvc
+rule cxx
+  command = ninja -t msvc -e $arch -- $cxx /nologo /showIncludes /FC @$out.rsp /c $in /Fo$out /Fd$pdbname_cc 
+  description = CXX $out
+  rspfile = $out.rsp
+  rspfile_content = $defines $includes $cflags $cflags_cc
+  deps = msvc
+rule idl
+  command = C:\Python27\python.exe gyp-win-tool midl-wrapper $arch $outdir $tlb $h $dlldata $iid $proxy $in $
+      $midl_includes $idlflags
+  description = IDL $in
+rule rc
+  command = C:\Python27\python.exe gyp-win-tool rc-wrapper $arch $rc $defines $resource_includes $rcflags /fo$out $in
+  description = RC $in
+rule asm
+  command = C:\Python27\python.exe gyp-win-tool asm-wrapper $arch $asm $defines $includes $asmflags /c /Fo $out $in
+  description = ASM $out
+rule alink
+  command = C:\Python27\python.exe gyp-win-tool link-wrapper $arch False $ar /nologo /ignore:4221 /OUT:$out @$out.rsp
+  description = LIB $out
+  rspfile = $out.rsp
+  rspfile_content = $in_newline $libflags
+rule solink_embed
+  command = C:\Python27\python.exe gyp-win-tool link-with-manifests $arch True $binary "C:\Python27\python.exe $
+      gyp-win-tool link-wrapper $arch False $ld /nologo $implibflag /DLL /OUT:$binary @$binary.rsp" 2 $mt $rc $
+      "$intermediatemanifest" $manifests
+  description = LINK_EMBED(DLL) $binary
+  pool = link_pool
+  restat = 1
+  rspfile = $binary.rsp
+  rspfile_content = $libs $in_newline $ldflags
+rule solink_module_embed
+  command = C:\Python27\python.exe gyp-win-tool link-with-manifests $arch True $binary "C:\Python27\python.exe $
+      gyp-win-tool link-wrapper $arch False $ld /nologo $implibflag /DLL /OUT:$binary @$binary.rsp" 2 $mt $rc $
+      "$intermediatemanifest" $manifests
+  description = LINK_EMBED(DLL) $binary
+  pool = link_pool
+  restat = 1
+  rspfile = $binary.rsp
+  rspfile_content = $libs $in_newline $ldflags
+rule link_embed
+  command = C:\Python27\python.exe gyp-win-tool link-with-manifests $arch True $binary "C:\Python27\python.exe $
+      gyp-win-tool link-wrapper $arch False $ld /nologo /OUT:$binary @$binary.rsp" 1 $mt $rc "$intermediatemanifest" $
+      $manifests
+  description = LINK_EMBED $binary
+  pool = link_pool
+  rspfile = $binary.rsp
+  rspfile_content = $in_newline $libs $ldflags
+rule solink
+  command = C:\Python27\python.exe gyp-win-tool link-with-manifests $arch False $binary "C:\Python27\python.exe $
+      gyp-win-tool link-wrapper $arch False $ld /nologo $implibflag /DLL /OUT:$binary @$binary.rsp" 2 $mt $rc $
+      "$intermediatemanifest" $manifests
+  description = LINK(DLL) $binary
+  pool = link_pool
+  restat = 1
+  rspfile = $binary.rsp
+  rspfile_content = $libs $in_newline $ldflags
+rule solink_module
+  command = C:\Python27\python.exe gyp-win-tool link-with-manifests $arch False $binary "C:\Python27\python.exe $
+      gyp-win-tool link-wrapper $arch False $ld /nologo $implibflag /DLL /OUT:$binary @$binary.rsp" 2 $mt $rc $
+      "$intermediatemanifest" $manifests
+  description = LINK(DLL) $binary
+  pool = link_pool
+  restat = 1
+  rspfile = $binary.rsp
+  rspfile_content = $libs $in_newline $ldflags
+rule link
+  command = C:\Python27\python.exe gyp-win-tool link-with-manifests $arch False $binary "C:\Python27\python.exe $
+      gyp-win-tool link-wrapper $arch False $ld /nologo /OUT:$binary @$binary.rsp" 1 $mt $rc "$intermediatemanifest" $
+      $manifests
+  description = LINK $binary
+  pool = link_pool
+  rspfile = $binary.rsp
+  rspfile_content = $in_newline $libs $ldflags
+rule stamp
+  command = C:\Python27\python.exe gyp-win-tool stamp $out
+  description = STAMP $out
+rule copy
+  command = C:\Python27\python.exe gyp-win-tool recursive-mirror $in $out
+  description = COPY $in $out
+
+subninja obj\client\windows\unittests\gtest.ninja
+subninja obj\client\windows\unittests\gmock.ninja
+subninja obj\client\windows\unittests\processor_bits.ninja
+subninja obj\client\windows\crash_generation\crash_generation_client.ninja
+subninja obj\client\windows\common.ninja
+subninja obj\client\windows\sender\crash_report_sender.ninja
+subninja obj\client\windows\crash_generation\crash_generation_server.ninja
+subninja obj\client\windows\handler\exception_handler.ninja
+subninja obj\client\windows\unittests\client_tests.ninja
+subninja obj\client\windows\tests\crash_generation_app\crash_generation_app.ninja
+subninja obj\client\windows\build_all.ninja
+
+# Short names for targets.
+build build_all: phony obj\client\windows\build_all.actions_depends.stamp
+build client_tests: phony client_tests.exe
+build common: phony obj\client\windows\common.lib
+build crash_generation_app: phony crash_generation_app.exe
+build crash_generation_client: phony obj\client\windows\crash_generation\crash_generation_client.lib
+build crash_generation_server: phony obj\client\windows\crash_generation\crash_generation_server.lib
+build crash_report_sender: phony obj\client\windows\sender\crash_report_sender.lib
+build exception_handler: phony obj\client\windows\handler\exception_handler.lib
+build gmock: phony obj\client\windows\unittests\gmock.lib
+build gtest: phony obj\client\windows\unittests\gtest.lib
+build processor_bits: phony obj\client\windows\unittests\processor_bits.lib
+
+build all: phony client_tests.exe crash_generation_app.exe obj\client\windows\build_all.actions_depends.stamp $
+    obj\client\windows\common.lib obj\client\windows\crash_generation\crash_generation_client.lib $
+    obj\client\windows\crash_generation\crash_generation_server.lib obj\client\windows\handler\exception_handler.lib $
+    obj\client\windows\sender\crash_report_sender.lib obj\client\windows\unittests\gmock.lib $
+    obj\client\windows\unittests\gtest.lib obj\client\windows\unittests\processor_bits.lib
+default all
