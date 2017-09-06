@@ -102,6 +102,7 @@ GOTO:EOF
 :deleteOther
     call:logInfo "Deleting other files"
 
+    PowerShell -command "& { Get-ChildItem *.obj -File -Recurse | Foreach-Object {Remove-Item $_.FullName} }"
     PowerShell Remove-Item .\*\* -include *.js        -force -recurse
     PowerShell Remove-Item .\*\* -include *.css       -force -recurse
     PowerShell Remove-Item .\*\* -include *.htm       -force -recurse

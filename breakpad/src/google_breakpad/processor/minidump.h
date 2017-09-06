@@ -236,6 +236,7 @@ class MinidumpMemoryRegion : public MinidumpObject,
 
   // Print a human-readable representation of the object to stdout.
   void Print() const;
+  void SetPrintMode(bool hexdump, unsigned int width);
 
  protected:
   explicit MinidumpMemoryRegion(Minidump* minidump);
@@ -252,8 +253,11 @@ class MinidumpMemoryRegion : public MinidumpObject,
   template<typename T> bool GetMemoryAtAddressInternal(uint64_t address,
                                                        T*        value) const;
 
-  // The largest memory region that will be read from a minidump.  The
-  // default is 1MB.
+  // Knobs for controlling display of memory printing.
+  bool hexdump_;
+  unsigned int hexdump_width_;
+
+  // The largest memory region that will be read from a minidump.
   static uint32_t max_bytes_;
 
   // Base address and size of the memory region, and its position in the
@@ -350,7 +354,7 @@ class MinidumpThreadList : public MinidumpStream {
 
   static const uint32_t kStreamType = MD_THREAD_LIST_STREAM;
 
-  bool Read(uint32_t aExpectedSize);
+  bool Read(uint32_t aExpectedSize) override;
 
   // The largest number of threads that will be read from a minidump.  The
   // default is 256.
@@ -592,7 +596,7 @@ class MinidumpMemoryList : public MinidumpStream {
 
   explicit MinidumpMemoryList(Minidump* minidump);
 
-  bool Read(uint32_t expected_size);
+  bool Read(uint32_t expected_size) override;
 
   // The largest number of memory regions that will be read from a minidump.
   // The default is 256.
@@ -647,7 +651,7 @@ class MinidumpException : public MinidumpStream {
 
   explicit MinidumpException(Minidump* minidump);
 
-  bool Read(uint32_t expected_size);
+  bool Read(uint32_t expected_size) override;
 
   MDRawExceptionStream exception_;
   MinidumpContext*     context_;
@@ -687,7 +691,7 @@ class MinidumpAssertion : public MinidumpStream {
 
   explicit MinidumpAssertion(Minidump* minidump);
 
-  bool Read(uint32_t expected_size);
+  bool Read(uint32_t expected_size) override;
 
   MDRawAssertionInfo assertion_;
   string expression_;
@@ -744,7 +748,7 @@ class MinidumpSystemInfo : public MinidumpStream {
 
   static const uint32_t kStreamType = MD_SYSTEM_INFO_STREAM;
 
-  bool Read(uint32_t expected_size);
+  bool Read(uint32_t expected_size) override;
 
   // A string identifying the CPU vendor, if known.
   const string* cpu_vendor_;
@@ -849,8 +853,7 @@ class MinidumpUnloadedModuleList : public MinidumpStream,
 
   static const uint32_t kStreamType = MD_UNLOADED_MODULE_LIST_STREAM;
 
-
-  bool Read(uint32_t expected_size_);
+  bool Read(uint32_t expected_size_) override;
 
   // The largest number of modules that will be read from a minidump.  The
   // default is 1024.
@@ -886,7 +889,7 @@ class MinidumpMiscInfo : public MinidumpStream {
 
   explicit MinidumpMiscInfo(Minidump* minidump_);
 
-  bool Read(uint32_t expected_size_);
+  bool Read(uint32_t expected_size_) override;
 
   MDRawMiscInfo misc_info_;
 
@@ -927,7 +930,7 @@ class MinidumpBreakpadInfo : public MinidumpStream {
 
   explicit MinidumpBreakpadInfo(Minidump* minidump_);
 
-  bool Read(uint32_t expected_size_);
+  bool Read(uint32_t expected_size_) override;
 
   MDRawBreakpadInfo breakpad_info_;
 
@@ -995,7 +998,7 @@ class MinidumpMemoryInfoList : public MinidumpStream {
 
   explicit MinidumpMemoryInfoList(Minidump* minidump_);
 
-  bool Read(uint32_t expected_size);
+  bool Read(uint32_t expected_size) override;
 
   // Access to memory info using addresses as the key.
   RangeMap<uint64_t, unsigned int> *range_map_;
@@ -1090,7 +1093,7 @@ class MinidumpLinuxMapsList : public MinidumpStream {
   // Read and load the contents of the process mapping data.
   // The stream should have data in the form of /proc/self/maps.
   // This method returns whether the stream was read successfully.
-  bool Read(uint32_t expected_size);
+  bool Read(uint32_t expected_size) override;
 
   // The list of individual mappings.
   MinidumpLinuxMappings *maps_;
@@ -1105,7 +1108,9 @@ class MinidumpLinuxMapsList : public MinidumpStream {
 class Minidump {
  public:
   // path is the pathname of a file containing the minidump.
-  explicit Minidump(const string& path);
+  explicit Minidump(const string& path,
+                    bool hexdump=false,
+                    unsigned int hexdump_width=16);
   // input is an istream wrapping minidump data. Minidump holds a
   // weak pointer to input, and the caller must ensure that the stream
   // is valid as long as the Minidump object is.
@@ -1215,6 +1220,9 @@ class Minidump {
   // Is the OS Android.
   bool IsAndroid();
 
+  // Get current hexdump display settings.
+  unsigned int HexdumpMode() const { return hexdump_ ? hexdump_width_ : 0; }
+
  private:
   // MinidumpStreamInfo is used in the MinidumpStreamMap.  It lets
   // the Minidump object locate interesting streams quickly, and
@@ -1275,6 +1283,10 @@ class Minidump {
   // construction or after a failed Read(); true following a successful
   // Read().
   bool                      valid_;
+
+  // Knobs for controlling display of memory printing.
+  bool                      hexdump_;
+  unsigned int              hexdump_width_;
 
   DISALLOW_COPY_AND_ASSIGN(Minidump);
 };
