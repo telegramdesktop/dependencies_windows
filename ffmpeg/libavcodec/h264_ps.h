@@ -36,6 +36,7 @@
 
 #define MAX_SPS_COUNT          32
 #define MAX_PPS_COUNT         256
+#define MAX_LOG2_MAX_FRAME_NUM    (12 + 4)
 
 /**
  * Sequence parameter set
@@ -56,7 +57,8 @@ typedef struct SPS {
     int ref_frame_count;               ///< num_ref_frames
     int gaps_in_frame_num_allowed_flag;
     int mb_width;                      ///< pic_width_in_mbs_minus1 + 1
-    int mb_height;                     ///< pic_height_in_map_units_minus1 + 1
+    ///< (pic_height_in_map_units_minus1 + 1) * (2 - frame_mbs_only_flag)
+    int mb_height;
     int frame_mbs_only_flag;
     int mb_aff;                        ///< mb_adaptive_frame_field_flag
     int direct_8x8_inference_flag;
