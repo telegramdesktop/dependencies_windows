@@ -1,14 +1,14 @@
 @echo off
 set QT_VERSION_MAJOR=5
-SET QT_VERSION_MINOR=%QT_VERSION_MAJOR%.6
-SET QT_VERSION_PATCH=%QT_VERSION_MINOR%.2
-SET QT_VERSION_STR=5_6_2
+SET QT_VERSION_MINOR=%QT_VERSION_MAJOR%.12
+SET QT_VERSION_PATCH=%QT_VERSION_MINOR%.5
+SET QT_VERSION_STR=%QT_VERSION_PATCH%
 
 call:logInfo "Unpacking Qt5 libs %QT_VERSION_STR%"
-7z x -o.\qt%QT_VERSION_STR%\qtbase\lib .\qt%QT_VERSION_STR%\qtbase\lib\Qt5Libs.7z
+7z x .\Qt-%QT_VERSION_STR%.7z
 
 call:logInfo "Removing extracted qt archive"
-del .\qt%QT_VERSION_STR%\qtbase\lib\Qt5Libs.7z
+del .\Qt-%QT_VERSION_STR%.7z
 
 GOTO:EOF
 
